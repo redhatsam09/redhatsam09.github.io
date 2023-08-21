@@ -107,3 +107,32 @@ body {
 }
 
 /* Other CSS rules */
+
+/* ... (existing CSS rules) ... */
+
+/* Twitter page specific styles */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.twitter-post {
+    background-color: black;
+    border: 2px solid #00FF00;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    width: calc(33.33% - 20px); /* Divide equally and adjust for margins */
+    margin-bottom: 20px;
+    padding: 20px;
+    overflow: hidden; /* Hide any overflow from embedded content */
+    position: relative;
+}
+
+.twitter-post .twitter-tweet {
+    animation: glitch-animation 0.2s infinite linear alternate-reverse;
+}
+
+/* ... (other CSS rules) ... */
+
