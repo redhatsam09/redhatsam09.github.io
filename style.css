@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    font-family: monospace;
+    color: #00FF00;
+}
+
+.terminal {
+    background-color: black;
+    border: 2px solid #00FF00;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    max-width: 600px; /* Adjust the width as needed */
+    padding: 20px;
+}
+
+.output {
+    margin: 0;
+    padding: 0;
+    max-height: 300px; /* Adjust the height as needed */
+    overflow: auto;
+    position: relative;
+    white-space: pre-wrap; /* Allow line breaks and spaces to be preserved */
+}
+
+.green-text {
+    color: #00FF00;
+}
+
+.glitch {
+    animation: glitch-animation 0.2s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-animation {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(4px);
+    }
+    30%, 50%, 70% {
+        transform: translateX(-4px);
+    }
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.prompt {
+    color: #00FF00;
+    margin-right: 5px;
+}
+
+#user-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #00FF00;
+    color: #00FF00;
+    font-family: monospace;
+    outline: none;
+    width: 100%;
+}
+
+/* Existing CSS rules */
+
+.emoji {
+    font-size: 20px; /* Adjust the size as needed */
+    margin-right: 5px;
+    border: 2px solid #00FF00; /* Green border */
+    padding: 3px;
+    border-radius: 50%; /* Make it round */
+}
+
+/* Other CSS rules */
