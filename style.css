@@ -37,22 +37,7 @@ body {
     color: #00FF00;
 }
 
-.glitch {
-    animation: glitch-animation 0.2s infinite linear alternate-reverse;
-}
-
-@keyframes glitch-animation {
-    0%, 100% {
-        transform: translateX(0);
-    }
-    20%, 40%, 60%, 80% {
-        transform: translateX(4px);
-    }
-    30%, 50%, 70% {
-        transform: translateX(-4px);
-    }
-}
-
+/* Input line styles */
 .input-line {
     display: flex;
     align-items: center;
@@ -116,14 +101,10 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
     width: calc(33.33% - 20px);
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
     overflow: hidden;
     position: relative;
-}
-
-.twitter-post .twitter-tweet {
-    animation: glitch-animation 0.2s infinite linear alternate-reverse;
 }
 
 /* Other CSS rules */
