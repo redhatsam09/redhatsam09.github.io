@@ -12,8 +12,8 @@ body {
     background-color: black;
     font-family: monospace;
     color: #00FF00;
-    font-weight: bold; /* Make the text bolder */
-    font-size: 18px; /* Increase the font size */
+    font-weight: bold;
+    font-size: 18px;
 }
 
 /* Terminal styles */
@@ -22,18 +22,17 @@ body {
     border: 2px solid #00FF00;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
-    width: 100%; /* Set the terminal width to 100% */
-    max-width: 1400px; /* Set a maximum width for larger screens */
-    height: 73vh; /* Set height to 80% of the viewport height */
-    padding: 40px;
-    margin: 0 auto; /* Center the terminal horizontally */
-    overflow-y: auto; /* Enable vertical scrolling if content exceeds the height */
+    width: 100%;
+    max-width: 100%; /* Set maximum width for all screen sizes */
+    height: auto; /* Adjust height automatically based on content */
+    padding: 20px; /* Reduce padding for smaller screens */
+    overflow-y: auto;
 }
 
 .output {
     margin: 0;
     padding: 0;
-    max-height: 100%; /* Allow the output to take up the available height */
+    max-height: 100%;
     overflow: auto;
     position: relative;
     white-space: pre-wrap;
@@ -46,13 +45,13 @@ body {
 /* Input line styles */
 .input-line {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Stack input elements vertically on mobile */
     margin-top: 10px;
 }
 
 .prompt {
     color: #00FF00;
-    margin-right: 5px;
+    margin-bottom: 5px; /* Add spacing at the bottom */
 }
 
 #user-input {
@@ -80,14 +79,14 @@ body {
 
 .navigation li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 10px; /* Reduce spacing between navigation items */
 }
 
 .navigation a {
     text-decoration: none;
     color: #00FF00;
-    font-weight: bold; /* Make the navigation link text bolder */
-    font-size: 18px; /* Increase the font size for navigation links */
+    font-weight: bold;
+    font-size: 16px; /* Reduce font size for navigation links */
 }
 
 .navigation a:hover {
@@ -97,33 +96,15 @@ body {
 /* CVE page specific styles */
 .content {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Stack content vertically on mobile */
     align-items: center;
-    padding: 20px;
+    padding: 10px; /* Reduce padding for smaller screens */
 }
 
 .animated-list {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeAndSlideUp 1s forwards;
-}
-
-.twitter-post {
-    background-color: black;
-    border: 2px solid #00FF00;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
-    width: calc(33.33% - 20px);
-    height: 250px; /* Set a fixed height for uniform size */
-    margin: 10px;
-    padding: 10px;
-    overflow: hidden;
-    position: relative;
-    text-align: center; /* Center the content horizontally */
-}
-
-.twitter-post p {
-    margin: 10px 0;
 }
 
 /* Other CSS rules */
