@@ -20,14 +20,18 @@ body {
     border: 2px solid #00FF00;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
-    max-width: 600px;
-    padding: 20px;
+    width: 90vw; /* Set width to 90% of the viewport width */
+    height: 80vh; /* Set height to 80% of the viewport height */
+    max-width: 800px; /* Set a maximum width to prevent it from becoming too wide */
+    padding: 30px;
+    margin: 0 auto; /* Center the terminal horizontally */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds the height */
 }
 
 .output {
     margin: 0;
     padding: 0;
-    max-height: 300px;
+    max-height: 100%; /* Allow the output to take up the available height */
     overflow: auto;
     position: relative;
     white-space: pre-wrap;
@@ -86,13 +90,25 @@ body {
     text-decoration: underline;
 }
 
-/* Twitter page specific styles */
+/* CVE page specific styles */
 .content {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     padding: 20px;
+}
+
+.animated-list {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeAndSlideUp 1s forwards;
+}
+
+@keyframes fadeAndSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .twitter-post {
@@ -101,10 +117,16 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
     width: calc(33.33% - 20px);
+    height: 250px; /* Set a fixed height for uniform size */
     margin: 10px;
     padding: 10px;
     overflow: hidden;
     position: relative;
+    text-align: center; /* Center the content horizontally */
+}
+
+.twitter-post p {
+    margin: 10px 0;
 }
 
 /* Other CSS rules */
