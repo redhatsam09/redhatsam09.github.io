@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags, stylesheet link, and signature styles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -15,10 +16,23 @@
             right: 0;
         }
     </style>
+    <script>
+        // JavaScript for controlling music
+        function toggleMusic() {
+            var audio = document.getElementById("backgroundMusic");
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
 </head>
 <body>
+    <!-- Navigation bar -->
     <nav class="navigation">
         <ul>
+            <li><a id="musicButton" class="emoji" href="#" onclick="toggleMusic()"><span class="sound-emoji">🔊</span></a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="cve.html">CVE</a></li>
             <li><a href="twitter.html">Twitter</a></li>
@@ -26,6 +40,7 @@
         </ul>
     </nav>
 
+    <!-- Terminal container -->
     <div class="terminal">
         <pre class="output">
             <code class="green-text">
@@ -37,11 +52,18 @@
         </div>
     </div>
 
-    <!-- Signature -->
+    <!-- Signature footer -->
     <footer class="signature">
         <p>by redhatsam (0x.dutta)</p>
     </footer>
 
+    <!-- Background music -->
+    <audio id="backgroundMusic" loop>
+        <source src="sus.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Script reference -->
     <script src="script.js"></script>
 </body>
 </html>
