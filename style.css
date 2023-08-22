@@ -24,7 +24,7 @@ body {
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
     width: 100%; /* Set the terminal width to 100% */
     max-width: 1400px; /* Set a maximum width for larger screens */
-    height: 75vh; /* Set height to 80% of the viewport height */
+    height: 73vh; /* Set height to 80% of the viewport height */
     padding: 40px;
     margin: 0 auto; /* Center the terminal horizontally */
     overflow-y: auto; /* Enable vertical scrolling if content exceeds the height */
