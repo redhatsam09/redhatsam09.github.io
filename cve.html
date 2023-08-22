@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVE Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles specific to this page */
+        .animated-list {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeAndSlideUp 1s forwards;
+        }
+
+        @keyframes fadeAndSlideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Style for the square boxes */
+        .vulnerability-box {
+            border: 2px solid #333;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="animated-list">
+            <div class="vulnerability-box">
+                <h3>FormCraft &lt; 1.2.7 - Admin+ Stored XSS</h3>
+                <p>The plugin does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup).</p>
+                <p>CVE-2023-3501</p>
+            </div>
+
+            <div class="vulnerability-box">
+                <h3>Ninja Forms &lt; 3.6.26 - Admin+ Stored HTML Injection</h3>
+                <p>The plugin does not sanitize and escape its label fields, which could allow high privilege users such as admin to perform Stored HTML injection. Only users with the unfiltered_html capability can perform this, and such users are already allowed to use JS in posts/comments etc. The vendor acknowledged and fixed the issue.</p>
+                <p>CVE-2023-4109</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
