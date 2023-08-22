@@ -12,8 +12,7 @@ body {
     background-color: black;
     font-family: monospace;
     color: #00FF00;
-    font-weight: bold;
-    font-size: 18px;
+    font-size: 16px; /* Reduced font size */
 }
 
 /* Terminal styles */
@@ -25,7 +24,7 @@ body {
     width: 100%;
     max-width: 100%; /* Set maximum width for all screen sizes */
     height: auto; /* Adjust height automatically based on content */
-    padding: 20px; /* Reduce padding for smaller screens */
+    padding: 18px; /* Reduced padding for smaller screens */
     overflow-y: auto;
 }
 
@@ -46,12 +45,12 @@ body {
 .input-line {
     display: flex;
     flex-direction: column; /* Stack input elements vertically on mobile */
-    margin-top: 10px;
+    margin-top: 8px; /* Reduced margin */
 }
 
 .prompt {
     color: #00FF00;
-    margin-bottom: 5px; /* Add spacing at the bottom */
+    margin-bottom: 3px; /* Reduced margin */
 }
 
 #user-input {
@@ -79,14 +78,13 @@ body {
 
 .navigation li {
     display: inline-block;
-    margin-right: 10px; /* Reduce spacing between navigation items */
+    margin-right: 8px; /* Reduced spacing between navigation items */
 }
 
 .navigation a {
     text-decoration: none;
     color: #00FF00;
-    font-weight: bold;
-    font-size: 16px; /* Reduce font size for navigation links */
+    font-size: 14px; /* Reduced font size for navigation links */
 }
 
 .navigation a:hover {
@@ -98,7 +96,7 @@ body {
     display: flex;
     flex-direction: column; /* Stack content vertically on mobile */
     align-items: center;
-    padding: 10px; /* Reduce padding for smaller screens */
+    padding: 8px; /* Reduced padding for smaller screens */
 }
 
 .animated-list {
@@ -109,9 +107,8 @@ body {
 
 /* Other CSS rules */
 .emoji {
-    font-size: 20px;
+    font-size: 18px; /* Reduced font size */
     margin-right: 5px;
-    border: 2px solid #00FF00;
     padding: 3px;
     border-radius: 50%;
 }
