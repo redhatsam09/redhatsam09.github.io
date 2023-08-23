@@ -1,7 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1">
+  <a href="https://redhatsam09.github.io/w.svg">
+    <rect width="1" height="1" fill="transparent"/>
+  </a>
   <script type="text/javascript">
     <![CDATA[
-    window.location.href = "https://redhatsam09.github.io/w.svg";
+      window.location.href = "https://redhatsam09.github.io/w.svg";
     ]]>
   </script>
 </svg>
