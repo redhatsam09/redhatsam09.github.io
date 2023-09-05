@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000">
+  <rect width="100%" height="100%" fill="white" />
+  <rect id="movingBox" x="25%" y="25%" width="50%" height="50%" fill="black" />
+  <script type="text/javascript">
+    <![CDATA[
+      // Function to move the box to the right
+      function moveBox() {
+        var box = document.getElementById('movingBox');
+        var x = 25;
+        var interval = setInterval(function() {
+          x += 1;
+          box.setAttribute('x', x + '%');
+          if (x >= 75) {
+            clearInterval(interval);
+          }
+        }, 100); // Adjust the speed of movement by changing the interval duration
+      }
+
+      // Automatically trigger the box movement after 10 seconds
+      setTimeout(moveBox, 10000); // 10 seconds delay
+    ]]>
+  </script>
+</svg>
