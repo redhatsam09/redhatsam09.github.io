@@ -1,12 +1,15 @@
 <svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
   <style>
-    @keyframes moving {
-      0% { transform: translateX(0); }
-      50% { transform: translateX(100px); }
-      100% { transform: translateX(0); }
+    @keyframes changingColors {
+      0% { transform: translateX(0); fill: red; }
+      20% { fill: orange; }
+      40% { fill: yellow; }
+      60% { fill: green; }
+      80% { fill: blue; }
+      100% { transform: translateX(100px); fill: purple; }
     }
     .horizontal-text {
-      animation: moving 2s infinite linear;
+      animation: changingColors 6s infinite linear;
     }
   </style>
   <text x="0" y="50" class="horizontal-text">Sam</text>
