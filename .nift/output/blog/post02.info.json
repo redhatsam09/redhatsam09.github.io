@@ -1,0 +1,10 @@
+{
+	"last-built": "15:22:02 Monday February 02 2026",
+	"name": "blog/post02",
+	"title": "post02",
+	"template": "templates/template.html",
+	"dependencies": [
+		"content/blog/post02.html",
+		"templates/template.html"
+	]
+}

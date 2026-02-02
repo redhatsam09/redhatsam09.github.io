@@ -1,126 +1,111 @@
-<header class="hero">
-	<p class="eyebrow">Nift Static Site Manager</p>
-	<h1>Install Nift on Your Platform</h1>
-	<p class="lead">Pick the method that fits your workflow. Whether you prefer package managers, binary releases, or building from source, this guide walks you through getting Nift running quickly.</p>
-	<div class="hero-actions">
-		<a class="btn primary" href="https://github.com/nifty-site-manager/nsm/releases" target="_blank" rel="noopener">Download Release Binaries</a>
-		<button class="btn ghost" type="button" data-scroll-target="#install-options">View Installation Options</button>
-	</div>
-</header>
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Landed by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/blog.css" />
+		<link rel="stylesheet" href="assets/css/pre.css" />
+		
+		<!-- uses google-code-prettify for syntax highlighting 
+			 see https://github.com/google/code-prettify for more info -->
+		<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js">
+		</script>
+		
+		<!-- uses MathJax CDC for LaTeX support
+			 see http://docs.mathjax.org/en/latest/start.html for more info -->
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config
+			({
+				extensions: ["tex2jax.js"],
+				jax: ["input/TeX", "output/HTML-CSS"],
+				tex2jax: 
+				{
+					inlineMath: [['$','$'], ['\\(','\\)']],
+					displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+					processEscapes: true
+				},
+				"HTML-CSS": { availableFonts: ["MathJax TeX"] }
+			});
+		</script>
+		<script type="text/javascript" 
+				src="https://cdn.mathjax.org/mathjax/latest/MathJax.js">
+		</script>
+	</head>
+	<body class="is-preload landing">
+		<div id="page-wrapper">
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Sayandeep</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="about.html">About</a></li>
+							<li>
+								<a href="blog/index.html">Blog</a>
+								<ul>
+									<li><a href="blog/post01.html">Post 1</a></li>
+									<li><a href="blog/post02.html">Post 2</a></li>
+								</ul>
+							</li>
+							<li><a href="index.html" class="button primary">Home</a></li>
+						</ul>
+					</nav>
+				</header>
 
-<main id="install-options" class="content">
-	<section class="card">
-		<h2>Linux</h2>
-		<p class="section-lead">Choose between Snap, Flatpak, or compiling from source. All approaches deliver the same fast CLI tooling.</p>
-		<details open>
-			<summary>Snapcraft (recommended for Ubuntu)</summary>
-			<ol>
-				<li>Install Snap if needed:<br><code>sudo apt-get install snapd</code></li>
-				<li>Install Nift:<br><code>sudo snap install nift --classic</code></li>
-				<li>Remove Nift when finished:<br><code>sudo snap remove nift</code></li>
-			</ol>
-		</details>
-		<details>
-			<summary>Flatpak</summary>
-			<ol>
-				<li>Install Flatpak and add Flathub:<br><code>flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo</code></li>
-				<li>Install Nift for your user:<br><code>flatpak install --user https://flathub.org/repo/appstream/cc.nift.nsm.flatpakref</code></li>
-				<li>Optional: add shell aliases to <code>~/.bashrc</code>:<br><code>alias nift="flatpak run cc.nift.nsm"</code><br><code>alias nsm="flatpak run cc.nift.nsm"</code></li>
-			</ol>
-		</details>
-		<details>
-			<summary>Build from Source</summary>
-			<ol>
-				<li>Clone the repository:<br><code>git clone https://github.com/nifty-site-manager/nsm.git</code></li>
-				<li>Install build dependencies (g++, make, LuaJIT or system Lua):<br><code>sudo apt-get install build-essential git luajit</code></li>
-				<li>Build and install:<br><code>make -j$(nproc)</code><br><code>sudo make install</code></li>
-			</ol>
-		</details>
-	</section>
+			<!-- Banner -->
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h2>The future has landed</h2>
+							<p>And there are no hoverboards or flying cars.<br />
+							Just apps. Lots of mother flipping apps.</p>
+						</header>
+						<span class="image"><img src="images/profile.jpg" alt="" /></span>
+					</div>
+				</section>
 
-	<section class="card">
-		<h2>FreeBSD</h2>
-		<p class="section-lead">Use the official port or fetch binaries through pkgng.</p>
-		<details open>
-			<summary>Install from Ports</summary>
-			<pre><code>cd /usr/ports/www/nift
-sudo make install clean</code></pre>
-		</details>
-		<details>
-			<summary>Install via pkgng</summary>
-			<pre><code>sudo pkg install www/nift</code></pre>
-		</details>
-		<details>
-			<summary>Uninstall</summary>
-			<pre><code># Using ports
-doas make -C /usr/ports/www/nift deinstall
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Site Manager: <a href="https://nift.cc">Nift</a></li>
+					</ul>
+				</footer>
+		</div>
 
-# Using pkgng
-doas pkg delete www/nift</code></pre>
-		</details>
-	</section>
-
-	<section class="card">
-		<h2>Gentoo</h2>
-		<p class="section-lead">Add the overlay and pick the stable or live ebuild.</p>
-		<ol>
-			<li>Add overlay:<br><code>sudo layman -f -o https://raw.githubusercontent.com/NuLL3rr0r/gentoo-overlay/master/repositories.xml -a NuLL3rr0r</code></li>
-			<li>Install stable:<br><code>sudo emerge -atuv www-apps/nift</code></li>
-			<li>Install live (development):<br><code>sudo emerge -atuv '=www-apps/nift-9999'</code></li>
-			<li>Pin live build:<br><code>echo '=www-apps/nift-9999 **' | sudo tee /etc/portage/package.accept_keywords/www-apps_nift</code></li>
-			<li>Remove:<br><code>sudo emerge -C www-apps/nift</code></li>
-		</ol>
-	</section>
-
-	<section class="card">
-		<h2>macOS</h2>
-		<p class="section-lead">Install with Homebrew or compile from source.</p>
-		<details open>
-			<summary>Homebrew</summary>
-			<pre><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install nift</code></pre>
-		</details>
-		<details>
-			<summary>From Source</summary>
-			<pre><code>git clone https://github.com/nifty-site-manager/nsm.git
-cd nsm
-make -j$(sysctl -n hw.ncpu)
-make install PREFIX=/usr/local</code></pre>
-		</details>
-	</section>
-
-	<section class="card">
-		<h2>Windows</h2>
-		<p class="section-lead">Grab a Chocolatey package or extract the executable release bundle.</p>
-		<details open>
-			<summary>Chocolatey</summary>
-			<pre><code>choco install nift</code></pre>
-		</details>
-		<details>
-			<summary>Executable Bundle</summary>
-			<ol>
-				<li>Download <strong>Windows.zip</strong> from the releases page.</li>
-				<li>Extract <code>lua51.dll</code>, <code>nift.exe</code>, and <code>nsm.exe</code>.</li>
-				<li>Copy the files into a directory on your <code>%PATH%</code> (for example <code>C:\Windows\System32</code>).</li>
-			</ol>
-		</details>
-		<details>
-			<summary>Build from Source</summary>
-			<p>Install a C++ toolchain (MSYS2 or Visual Studio), clone the repo, then run <code>make mingw</code> from the provided makefile to produce <code>nsm.exe</code> and <code>nift.exe</code>.</p>
-		</details>
-	</section>
-
-	<aside class="card resources">
-		<h2>Resources</h2>
-		<ul>
-			<li><a href="https://nift.dev" target="_blank" rel="noopener">Official documentation</a></li>
-			<li><a href="https://github.com/nifty-site-manager/nsm" target="_blank" rel="noopener">Source repository</a></li>
-			<li><a href="https://nifty-site-manager.github.io" target="_blank" rel="noopener">Sample sites</a></li>
-		</ul>
-		<p class="note">Need to uninstall Nift? Each section above includes removal commands for the matching platform.</p>
-	</aside>
-</main>
-
-<footer class="footer">
-	<p>Maintained with <span aria-hidden="true">&#9889;</span> by the Nift community. Last updated <span id="last-updated" aria-live="polite"></span>.</p>
-</footer>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src='assets/js/process_md_blocks.js'></script>
+			<script src="assets/js/showdown.min.js"></script>
+			<script>
+				var converter = new showdown.Converter();
+				converter.setOption('tables', 'on');
+				converter.setOption('strikethrough', 'on');
+				converter.setOption('emoji', 'on');
+				elements = document.getElementsByClassName('markdown');
+				for(var i=0; i<elements.length; i++)
+					elements[i].innerHTML = converter.makeHtml(elements[i].innerHTML.replace(/&lt;/g, "xwxw").replace(/&gt;/g, "pqpq")).replace(/xwxw/g, "&lt;").replace(/pqpq/g, "&gt;");
+			</script>
+	</body>
+</html>

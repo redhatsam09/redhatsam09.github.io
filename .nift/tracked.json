@@ -6,6 +6,11 @@
 			"template": "templates/template.html"
 		},
 		{
+			"name": "about",
+			"title": "about",
+			"template": "templates/template.html"
+		},
+		{
 			"name": "assets/css/style",
 			"title": "style",
 			"template": "templates/template.css",
@@ -18,6 +23,26 @@
 			"template": "templates/template.js",
 			"content-ext": ".js",
 			"output-ext": ".js"
+		},
+		{
+			"name": "blog/index",
+			"title": "index",
+			"template": "templates/template.html"
+		},
+		{
+			"name": "blog/post01",
+			"title": "post01",
+			"template": "templates/template.html"
+		},
+		{
+			"name": "blog/post02",
+			"title": "post02",
+			"template": "templates/template.html"
+		},
+		{
+			"name": "elements",
+			"title": "elements",
+			"template": "templates/template.html"
 		}
 	]
 }
