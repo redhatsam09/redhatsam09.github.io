@@ -1,0 +1,11 @@
+{
+	"last-built": "06:46:05 Monday February 02 2026",
+	"name": "/",
+	"title": "index",
+	"template": "templates/template.html",
+	"dependencies": [
+		"content/index.html",
+		"templates/head.html",
+		"templates/template.html"
+	]
+}
